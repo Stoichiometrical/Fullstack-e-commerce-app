@@ -1,0 +1,30 @@
+import React from 'react';
+import ReactDOM from 'react-dom'
+import App from "./App"
+import {DarkModeContextProvider} from "./context/darkModeContext";
+
+
+ReactDOM.render(
+      <DarkModeContextProvider>
+              <App />
+      </DarkModeContextProvider>
+    ,document.getElementById('root')
+)
+
+// ReactDOM.render(
+//     <React.StrictMode>
+//         <DarkModeContextProvider>
+//             <App />
+//         </DarkModeContextProvider>
+//     </React.StrictMode>,document.getElementById('root')
+// )
+
+// const container =document.getElementById('root');
+// const root = ReactDOM.createRoot(container)
+// root.render(<App />)
+
+
+
+
+
+
